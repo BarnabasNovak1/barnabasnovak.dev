@@ -578,7 +578,15 @@ a.button.large.wide.smooth-scroll-middle:hover {
 
 /* Project Card Buttons - Match Homepage Style */
 .card a.button,
-a.button.large.wide.smooth-scroll-middle {
+.card-body a.button,
+a.button,
+a.button.large,
+a.button.wide,
+a.button.smooth-scroll-middle,
+a.button.large.wide,
+a.button.large.wide.smooth-scroll-middle,
+.card a[class*="button"],
+main a.button {
   display: inline-flex !important;
   align-items: center !important;
   gap: 8px !important;
@@ -586,20 +594,31 @@ a.button.large.wide.smooth-scroll-middle {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-size: 0.875rem !important;
   font-weight: 600 !important;
-  background: var(--accent) !important;
+  background: #00d4ff !important;
+  background-color: #00d4ff !important;
   color: #050507 !important;
   border: none !important;
   border-radius: 8px !important;
   text-decoration: none !important;
   cursor: pointer !important;
   transition: all 0.2s !important;
+  box-shadow: none !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  line-height: 1.4 !important;
 }
 
 .card a.button:hover,
-a.button.large.wide.smooth-scroll-middle:hover {
+.card-body a.button:hover,
+a.button:hover,
+a.button.large:hover,
+a.button.wide:hover,
+a.button.large.wide.smooth-scroll-middle:hover,
+main a.button:hover {
   transform: translateY(-2px) !important;
   box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3) !important;
-  background: var(--accent) !important;
+  background: #00d4ff !important;
+  background-color: #00d4ff !important;
   color: #050507 !important;
 }
 
