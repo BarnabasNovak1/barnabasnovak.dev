@@ -1429,3 +1429,219 @@ footer {
         height: 4px;
     }
 }
+
+/* ============================================
+   COMPREHENSIVE MOBILE OPTIMIZATION
+   ============================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+    /* Project Cards */
+    .card-body.d-flex {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    
+    .card-body .w-75,
+    .card-body .w-25 {
+        width: 100% !important;
+    }
+    
+    .card-body .w-25.text-end {
+        text-align: center !important;
+        margin-top: 20px !important;
+    }
+    
+    .card-body .w-25 img {
+        max-width: 150px !important;
+        margin: 0 auto !important;
+    }
+    
+    /* Flashcards */
+    .experience-flashcards {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 16px !important;
+    }
+    
+    .flashcard {
+        min-height: 280px !important;
+    }
+    
+    /* Section padding */
+    section.py-5 {
+        padding: 40px 0 !important;
+    }
+    
+    .container.px-5 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    /* Typography */
+    h1.display-5,
+    .display-5 {
+        font-size: 1.75rem !important;
+    }
+    
+    h2.fw-bolder {
+        font-size: 1.25rem !important;
+    }
+    
+    /* Project Cards */
+    .card {
+        margin-bottom: 24px !important;
+    }
+    
+    .card-body {
+        padding: 20px !important;
+    }
+    
+    .card-body p {
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+    }
+    
+    /* Flashcards */
+    .experience-flashcards {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    
+    .flashcard {
+        min-height: 250px !important;
+    }
+    
+    .flashcard-front h2,
+    .flashcard-back h2 {
+        font-size: 1.1rem !important;
+    }
+    
+    .flashcard-front p,
+    .flashcard-back p {
+        font-size: 0.85rem !important;
+    }
+    
+    .flashcard-logo img {
+        max-width: 60px !important;
+        max-height: 60px !important;
+    }
+    
+    /* Certificates Grid */
+    .items.style1,
+    .items.style1.medium {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .items.style1 section {
+        min-height: auto !important;
+        padding: 20px !important;
+    }
+    
+    /* Gallery */
+    .gallery {
+        gap: 12px !important;
+    }
+    
+    .gallery article {
+        min-width: 200px !important;
+    }
+    
+    /* Wrapper sections */
+    .wrapper.style1 {
+        padding: 40px 16px !important;
+    }
+    
+    .wrapper.style1 h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    /* Container */
+    .container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    
+    .container.px-5 {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    
+    /* Typography */
+    h1.display-5,
+    .display-5 {
+        font-size: 1.5rem !important;
+    }
+    
+    h2.fw-bolder {
+        font-size: 1.1rem !important;
+    }
+    
+    p {
+        font-size: 0.9rem !important;
+    }
+    
+    /* Buttons */
+    .card a.button,
+    a.button,
+    a.button.large.wide.smooth-scroll-middle {
+        padding: 10px 20px !important;
+        font-size: 0.8rem !important;
+        min-width: 100px !important;
+    }
+    
+    /* Cards */
+    .card-body {
+        padding: 16px !important;
+    }
+    
+    .card-body .w-25 img {
+        max-width: 100px !important;
+    }
+    
+    /* Flashcards */
+    .flashcard {
+        min-height: 220px !important;
+    }
+    
+    .flashcard-front h2,
+    .flashcard-back h2 {
+        font-size: 1rem !important;
+    }
+    
+    .flashcard-description {
+        font-size: 0.8rem !important;
+    }
+    
+    /* Certificates */
+    .items.style1 section h3 {
+        font-size: 0.95rem !important;
+    }
+    
+    .items.style1 section p {
+        font-size: 0.8rem !important;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 24px 16px !important;
+    }
+    
+    footer .small {
+        font-size: 0.75rem !important;
+    }
+    
+    /* Gallery */
+    .gallery article {
+        min-width: 160px !important;
+    }
+    
+    .gallery article .caption h3 {
+        font-size: 0.85rem !important;
+    }
+}
