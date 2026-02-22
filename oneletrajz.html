@@ -40,28 +40,37 @@
     <style>
     </style>
 </head>
-<body class="d-flex flex-column h-100">
-
-    
-    <!-- Styles handled by dark-theme.css -->
-
-    <main class="flex-shrink-0">
-        <!-- Navigáció-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-            <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Novák Barnabás</span></a>
-                <a class="btn btn-outline-primary ms-3" href="resume.html">En</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                        <li class="nav-item"><a class="nav-link" href="kezdolap.html">Főoldal</a></li>
-                        <li class="nav-item"><a class="nav-link" href="oneletrajz.html">Önéletrajz</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projektek.html">Projektek</a></li>
-                    </ul>
-                </div>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="kezdolap.html" class="nav-logo">
+                <img src="assets/BNlogo.png" alt="BN" class="nav-logo-img" style="width:28px;height:28px;max-width:28px;" />
+                <span>Novák Barnabás</span>
+            </a>
+            <div class="nav-links">
+                <a href="kezdolap.html" class="nav-link">Főoldal</a>
+                <a href="oneletrajz.html" class="nav-link active">Önéletrajz</a>
+                <a href="projektek.html" class="nav-link">Projektek</a>
             </div>
-        </nav>
+            <div class="nav-right">
+                <a href="resume.html" class="lang-btn">EN</a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="kezdolap.html">Főoldal</a>
+        <a href="oneletrajz.html">Önéletrajz</a>
+        <a href="projektek.html">Projektek</a>
+        <a href="resume.html">English</a>
+    </div>
+
+    <main style="padding-top: 64px;">
         <!-- Flashcard Tapasztalatok Idővonala -->
         <section class="experience-section py-5">
             <div class="container px-5 mb-5">
@@ -437,5 +446,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+<script>
+    function toggleMenu() {
+        document.getElementById('mobileMenu').classList.toggle('open');
+    }
+</script>
 </body>
 </html>
