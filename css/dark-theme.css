@@ -576,6 +576,33 @@ a.button.large.wide.smooth-scroll-middle:hover {
   border-color: rgba(0, 212, 255, 0.4) !important;
 }
 
+/* Project Card Buttons - Match Homepage Style */
+.card a.button,
+a.button.large.wide.smooth-scroll-middle {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 12px 24px !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  background: var(--accent) !important;
+  color: #050507 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+}
+
+.card a.button:hover,
+a.button.large.wide.smooth-scroll-middle:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3) !important;
+  background: var(--accent) !important;
+  color: #050507 !important;
+}
+
 /* ============================================
    GALLERY
    ============================================ */
