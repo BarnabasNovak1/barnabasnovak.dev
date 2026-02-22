@@ -906,6 +906,18 @@ button.mobile-menu-btn,
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Force show hamburger on mobile/tablet */
+@media screen and (max-width: 992px) {
+    button.mobile-menu-btn,
+    .nav-right button.mobile-menu-btn,
+    .mobile-menu-btn {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
 }
 
 button.mobile-menu-btn i,
