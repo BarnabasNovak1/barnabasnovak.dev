@@ -888,22 +888,41 @@ footer a:hover {
 
 .mobile-menu-btn {
     display: none;
-    background: none !important;
+    background: transparent !important;
     border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
     color: #ffffff !important;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    padding: 8px;
+    padding: 4px;
     line-height: 1;
-    transition: color 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-.mobile-menu-btn i {
+.mobile-menu-btn:focus,
+.mobile-menu-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.mobile-menu-btn i,
+.mobile-menu-btn .bi,
+.mobile-menu-btn .bi-list {
     color: #ffffff !important;
+    font-size: 1.5rem !important;
+    display: block !important;
 }
 
 .mobile-menu-btn:hover {
-    color: var(--accent);
+    color: var(--accent) !important;
+}
+
+.mobile-menu-btn:hover i {
+    color: var(--accent) !important;
 }
 
 /* Mobile Menu */
