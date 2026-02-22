@@ -589,8 +589,11 @@ a.button.large.wide.smooth-scroll-middle,
 main a.button {
   display: inline-flex !important;
   align-items: center !important;
+  justify-content: center !important;
   gap: 8px !important;
-  padding: 12px 24px !important;
+  padding: 12px 28px !important;
+  min-width: 120px !important;
+  height: auto !important;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-size: 0.875rem !important;
   font-weight: 600 !important;
@@ -606,6 +609,10 @@ main a.button {
   text-transform: none !important;
   letter-spacing: normal !important;
   line-height: 1.4 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  width: auto !important;
+  margin: 0 !important;
 }
 
 .card a.button:hover,
