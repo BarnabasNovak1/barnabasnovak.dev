@@ -886,6 +886,7 @@ footer a:hover {
     background: rgba(255, 255, 255, 0.05);
 }
 
+button.mobile-menu-btn,
 .mobile-menu-btn {
     display: none;
     background: transparent !important;
@@ -895,32 +896,48 @@ footer a:hover {
     color: #ffffff !important;
     font-size: 1.5rem;
     cursor: pointer;
-    padding: 4px;
+    padding: 8px;
     line-height: 1;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
 }
 
+button.mobile-menu-btn:focus,
+button.mobile-menu-btn:active,
 .mobile-menu-btn:focus,
 .mobile-menu-btn:active {
     outline: none !important;
     box-shadow: none !important;
     border: none !important;
+    color: #ffffff !important;
 }
 
+button.mobile-menu-btn i,
+button.mobile-menu-btn .bi,
+button.mobile-menu-btn .bi-list,
 .mobile-menu-btn i,
 .mobile-menu-btn .bi,
-.mobile-menu-btn .bi-list {
+.mobile-menu-btn .bi-list,
+.nav-right button i,
+.nav-right .mobile-menu-btn i {
     color: #ffffff !important;
     font-size: 1.5rem !important;
-    display: block !important;
+    display: inline-block !important;
+    line-height: 1 !important;
+    -webkit-text-stroke: 0 !important;
 }
 
+button.mobile-menu-btn:hover,
 .mobile-menu-btn:hover {
     color: var(--accent) !important;
 }
 
+button.mobile-menu-btn:hover i,
 .mobile-menu-btn:hover i {
     color: var(--accent) !important;
 }
