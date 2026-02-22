@@ -1271,3 +1271,10 @@ footer {
         height: 4px;
     }
 }
+
+/* Nav Logo Image */
+.nav-logo-img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
