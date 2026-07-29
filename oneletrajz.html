@@ -23,13 +23,14 @@
     <!-- Egyedi Google betűtípus-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap">
-    <!-- Bootstrap ikonok-->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Alap téma CSS (tartalmazza a Bootstrap-et)-->
+    <!-- Styles -->
     <link href="css/styles.css" rel="stylesheet" />
-    <!-- Dark Theme CSS -->
     <link href="css/dark-theme.css" rel="stylesheet" />
+    <link href="css/arcade-cyber.css" rel="stylesheet" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R13VS95H34"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -37,49 +38,31 @@
         gtag('js', new Date());
         gtag('config', 'G-R13VS95H34');
     </script>
-    <style>
-    </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="kezdolap.html" class="nav-logo">
-                <img src="assets/BNlogo.png" alt="BN" class="nav-logo-img" style="width:28px;height:28px;max-width:28px;" />
-                <span>Novák Barnabás</span>
-            </a>
-            <div class="nav-links">
-                <a href="kezdolap.html" class="nav-link">Főoldal</a>
-                <a href="oneletrajz.html" class="nav-link active">Önéletrajz</a>
-                <a href="projektek.html" class="nav-link">Projektek</a>
-            </div>
-            <div class="nav-right">
-                <a href="resume.html" class="lang-btn">EN</a>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">
-                    <i class="bi bi-list"></i>
-                </button>
-            </div>
+    <nav class="cyber-nav">
+        <a href="kezdolap.html" class="cyber-nav-logo">
+            <img src="assets/BNlogo.png" alt="BN" />
+        </a>
+        <div class="cyber-nav-links">
+            <a href="kezdolap.html" class="cyber-nav-link">Főoldal</a>
+            <a href="projektek.html" class="cyber-nav-link">Projektek</a>
+            <a href="oneletrajz.html" class="cyber-nav-link active">Önéletrajz</a>
+        </div>
+        <div class="cyber-nav-actions">
+            <a href="resume.html" class="cyber-nav-lang">EN</a>
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="kezdolap.html">Főoldal</a>
-        <a href="oneletrajz.html">Önéletrajz</a>
-        <a href="projektek.html">Projektek</a>
-    </div>
+    <main style="padding-top: 80px;">
+        <div class="page-header">
+            <h1>Szakmai Háttér</h1>
+            <p>Pillanatkép az eddigi utamról</p>
+        </div>
 
-    <main style="padding-top: 64px;">
-        <!-- Flashcard Tapasztalatok Idővonala -->
-        <section class="experience-section py-5">
-            <div class="container px-5 mb-5">
-                <div class="text-center mb-5">
-                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Szakmai háttér</span></h1>
-                    <p class="lead text-muted">Pillanatkép az eddigi utamról</p>
-                </div>
-
-                <!-- Flashcard Kártyák -->
-                <div class="experience-flashcards">
+        <section class="experience-section">
+            <div class="experience-flashcards">
 
                     <!-- ClassMate AI - Startup Alapító -->
                     <div class="flashcard">
@@ -241,214 +224,104 @@
                         </div>
                     </div>
 
-                </div>
             </div>
         </section>
 
-
-    				<!-- Gallery -->
-
-                     <style>
-                    .gallery.style2.medium.lightbox.onscroll-fade-in article {
-                        white-space: normal;
-                    }
-                    .gallery.style2.medium.lightbox.onscroll-fade-in .caption {
-                        color: white;
-                    }
-                    .gallery.style2.medium.lightbox.onscroll-fade-in .caption p {
-                        margin-top: 5px;
-                        font-size: 1em;
-                        line-height: 1.4em;
-                        word-wrap: break-word; 
-                        white-space: normal
-
-                    }
-                </style>
-
-<div class="gallery style2 medium lightbox onscroll-fade-in" style="display: flex; overflow-x: auto; white-space: nowrap;">
-    <article>
-        <a href="https://www.neumannseries.com" class="image">
-            <img src="assets/Neumann.jpg" alt="Novák Barnabás részt vett és létrehozta a Neumann Konferencia 2023 weboldalait" />
-        </a>
-        <div class="caption">
-            <h3>Neumann konferencia New York 2023</h3>
-            
-            <ul class="actions fixed">
-                <li><span class="button small">Részletek</span></li>
-            </ul>
+        <div class="page-header" style="margin-top: 40px;">
+            <h1>Galéria</h1>
         </div>
-    </article>
-    <article>
-        <a href="https://results.nyrr.org/event/M2021/result/4616" class="image">
-            <img src="assets/nycmarathon.jpg" alt="Novák Barnabás NYC Maraton, a legfiatalabb magyar, aki teljesítette a New York Maratont" />
-        </a>
-        <div class="caption">
-            <h3>2021 NYC Maraton teljesítmény</h3>
 
-            <ul class="actions fixed">
-                <li><span class="button small">Részletek</span></li>
-            </ul>
-        </div>
-    </article>
-    <article>
-        <a href="https://www.neumannseries.com" class="image">
-            <img src="assets/princeton.jpg" alt="Novák Barnabás a Neumann Konferencián Princetonban" />
-        </a>
-        <div class="caption">
-            <h3>Látogatási előkészületek Princetonban</h3>
-       
-            <ul class="actions fixed">
-                <li><span class="button small">Részletek</span></li>
-            </ul>
-        </div>
-    </article>
-    <article>
-        <a href="https://www.calstatela.edu" class="image">
-            <img src="assets/los angeles.jpg" alt="Novák Barnabás Los Angelesben, BNOVAK LA-ben." />
-        </a>
-        <div class="caption">
-            <h3>Költözés Los Angelesbe</h3>
-            <ul class="actions fixed">
-                <li><span class="button small">Részletek</span></li>
-            </ul>
-        </div>
-    </article>
-    <article>
-        <a href=https://hungariansummit.com/hungarian-summit-2023/" class="image">
-            <img src="assets/Budapest.jpg" alt="Novák Barnabás Budapesten, Magyarországon" />
-        </a>
-        <div class="caption">
-            <h3>Budapest felfedezése</h3>
-          
-            <ul class="actions fixed">
-                <li><span class="button small">Részletek</span></li>
-            </ul>
-        </div>
-    </article>
-    <article>
-        <a href="https://www.bigbearmountainresort.com/ski-and-snowboard/lift-tickets" class="image">
-            <img src="assets/skying.jpg" alt="Novák Barnabás síel a hegyekben, Novák Barnabás" />
-        </a>
-        <div class="caption">
-            <h3>Síelési kaland</h3>
-           
-            <ul class="actions fixed">
-                <li><span class="button small">Részletek</span></li>
-            </ul>
-        </div>
-    </article>
-    <article>
-        <a href="https://www.frontiersofsciences.com" class="image">
-            <img src="assets/rockyphilly.jpg" alt="Novák Barnabás Philadelphiában, Novák Barnabás Rocky" />
-        </a>
-        <div class="caption">
-            <h3>Philadelphia fénypontjai</h3>
-            
-            <ul class="actions fixed">
-                <li><span class="button small">Részletek</span></li>
-            </ul>
-        </div>
-    </article>
-    <article>
-        <a href="https://mobile.puma.com/us/en/puma/nyc" class="image">
-            <img src="assets/f1.jpg" alt="Novák Barnabás F1 Szimulátor, Novák Barnabás Max Verstappen" />
-        </a>
-        <div class="caption">
-            <h3>F1 Szimulátor élmény</h3>
-            
-            <ul class="actions fixed">
-                <li><span class="button small">Részletek</span></li>
-            </ul>
-        </div>
-    </article>
-    <article>
-        <a href="https://www.fiteq.org/world-ranking/player/13461/overview" class="image">
-            <img src="assets/teqball.jpg" alt="Novák Barnabás Teqball, Novák Barnabás teqballozik" />
-        </a>
-        <div class="caption">
-            <h3>Teqball szenvedély</h3>
-          
-            <ul class="actions fixed">
-                <li><span class="button small">Részletek</span></li>
-            </ul>
-        </div>
-    </article>
-</div>
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const gallery = document.querySelector('.gallery.style2.medium.lightbox.onscroll-fade-in');
-        const scrollSpeed = 10; 
-        const scrollThreshold = 50; 
-    
-        let animationFrameId;
-        let isScrolling = false;
-        let scrollDirection = 0;
-    
-        function smoothScroll() {
-            if (isScrolling) {
-                gallery.scrollLeft += scrollDirection * scrollSpeed;
-                animationFrameId = requestAnimationFrame(smoothScroll);
-            }
-        }
-    
-        document.addEventListener('mousemove', function(e) {
-            const windowWidth = window.innerWidth;
-            const mouseX = e.clientX;
-    
-            if (mouseX < scrollThreshold) {
-                scrollDirection = -1; 
-                if (!isScrolling) {
-                    isScrolling = true;
-                    smoothScroll();
-                }
-            } else if (mouseX > windowWidth - scrollThreshold) {
-                scrollDirection = 1; 
-                if (!isScrolling) {
-                    isScrolling = true;
-                    smoothScroll();
-                }
-            } else {
-                isScrolling = false;
-                cancelAnimationFrame(animationFrameId);
-            }
-        });
-    
-        document.addEventListener('mouseleave', function() {
-            isScrolling = false;
-            cancelAnimationFrame(animationFrameId);
-        });
-    });
-    </script>
-                        
-</div>
-
-</section>
-
-
-   <!-- Lábléc -->
-   <footer class="py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Szerzői jog &copy; 2025 Novák Barnabás - Minden jog fenntartva</div></div>
-                </div>
+        <div class="photo-gallery-wrapper">
+            <div class="photo-gallery">
+                <a href="https://www.neumannseries.com" class="photo-item" target="_blank">
+                    <img src="assets/Neumann.jpg" alt="Neumann Konferencia" />
+                    <div class="photo-caption">Neumann NYC 2023 - Konferencia weboldal készítés</div>
+                </a>
+                <a href="https://results.nyrr.org/event/M2021/result/4616" class="photo-item" target="_blank">
+                    <img src="assets/nycmarathon.jpg" alt="NYC Maraton" />
+                    <div class="photo-caption">NYC Maraton - Legfiatalabb magyar</div>
+                </a>
+                <a href="https://www.neumannseries.com" class="photo-item" target="_blank">
+                    <img src="assets/princeton.jpg" alt="Princeton" />
+                    <div class="photo-caption">Princeton - Konferencia előkészületek</div>
+                </a>
+                <a href="https://www.calstatela.edu" class="photo-item" target="_blank">
+                    <img src="assets/los angeles.jpg" alt="Los Angeles" />
+                    <div class="photo-caption">Los Angeles - Új fejezet kezdődik</div>
+                </a>
+                <a href="https://hungariansummit.com/hungarian-summit-2023/" class="photo-item" target="_blank">
+                    <img src="assets/Budapest.jpg" alt="Budapest" />
+                    <div class="photo-caption">Budapest - Gyökerek felfedezése</div>
+                </a>
+                <a href="#" class="photo-item">
+                    <img src="assets/skying.jpg" alt="Síelés" />
+                    <div class="photo-caption">Big Bear - Síelési kaland</div>
+                </a>
+                <a href="https://www.frontiersofsciences.com" class="photo-item" target="_blank">
+                    <img src="assets/rockyphilly.jpg" alt="Philadelphia" />
+                    <div class="photo-caption">Philadelphia - Rocky lépcsők</div>
+                </a>
+                <a href="#" class="photo-item">
+                    <img src="assets/f1.jpg" alt="F1 Szimulátor" />
+                    <div class="photo-caption">F1 Szimulátor - Versenyélmény</div>
+                </a>
+                <a href="https://www.fiteq.org/world-ranking/player/13461/overview" class="photo-item" target="_blank">
+                    <img src="assets/teqball.jpg" alt="Teqball" />
+                    <div class="photo-caption">Teqball - Rangsorolt játékos</div>
+                </a>
+                <!-- Duplicate for seamless loop -->
+                <a href="https://www.neumannseries.com" class="photo-item" target="_blank">
+                    <img src="assets/Neumann.jpg" alt="Neumann Konferencia" />
+                    <div class="photo-caption">Neumann NYC 2023 - Konferencia weboldal készítés</div>
+                </a>
+                <a href="https://results.nyrr.org/event/M2021/result/4616" class="photo-item" target="_blank">
+                    <img src="assets/nycmarathon.jpg" alt="NYC Maraton" />
+                    <div class="photo-caption">NYC Maraton - Legfiatalabb magyar</div>
+                </a>
+                <a href="https://www.neumannseries.com" class="photo-item" target="_blank">
+                    <img src="assets/princeton.jpg" alt="Princeton" />
+                    <div class="photo-caption">Princeton - Konferencia előkészületek</div>
+                </a>
+                <a href="https://www.calstatela.edu" class="photo-item" target="_blank">
+                    <img src="assets/los angeles.jpg" alt="Los Angeles" />
+                    <div class="photo-caption">Los Angeles - Új fejezet kezdődik</div>
+                </a>
+                <a href="https://hungariansummit.com/hungarian-summit-2023/" class="photo-item" target="_blank">
+                    <img src="assets/Budapest.jpg" alt="Budapest" />
+                    <div class="photo-caption">Budapest - Gyökerek felfedezése</div>
+                </a>
+                <a href="#" class="photo-item">
+                    <img src="assets/skying.jpg" alt="Síelés" />
+                    <div class="photo-caption">Big Bear - Síelési kaland</div>
+                </a>
+                <a href="https://www.frontiersofsciences.com" class="photo-item" target="_blank">
+                    <img src="assets/rockyphilly.jpg" alt="Philadelphia" />
+                    <div class="photo-caption">Philadelphia - Rocky lépcsők</div>
+                </a>
+                <a href="#" class="photo-item">
+                    <img src="assets/f1.jpg" alt="F1 Szimulátor" />
+                    <div class="photo-caption">F1 Szimulátor - Versenyélmény</div>
+                </a>
+                <a href="https://www.fiteq.org/world-ranking/player/13461/overview" class="photo-item" target="_blank">
+                    <img src="assets/teqball.jpg" alt="Teqball" />
+                    <div class="photo-caption">Teqball - Rangsorolt játékos</div>
+                </a>
             </div>
-            <a class="text-gradient" href="https://www.linkedin.com/in/barnabas-novak/"alt="Novák Barnabás, Barnabas Novak"><i class="bi bi-linkedin"></i></a>
-            <a class="text-gradient" href="https://github.com/BarnabasNovak1" alt="Novák Barnabás, Barnabas Novak"><i class="bi bi-github"></i></a>
-            <a class="text-gradient" href="https://www.instagram.com/b.novak11/" alt="Novák Barnabás, Barnabas Novak"><i class="bi bi-instagram"></i></a>
+        </div>
+    </main>
+
+    <footer class="cyber-footer">
+        <div class="container">
+            <p>&copy; 2026 Novák Barnabás</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/barnabas-novak/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/BarnabasNovak1" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/b.novak11/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-<script>
-    function toggleMenu() {
-        document.getElementById('mobileMenu').classList.toggle('open');
-    }
-</script>
 </body>
 </html>

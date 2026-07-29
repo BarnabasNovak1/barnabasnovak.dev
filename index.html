@@ -19,11 +19,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <!-- Bootstrap icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Styles -->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/dark-theme.css" rel="stylesheet" />
+    <link href="css/arcade-cyber.css" rel="stylesheet" />
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R13VS95H34"></script>
     <script>
@@ -35,109 +37,157 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="index.html" class="nav-logo">
-                <img src="assets/BNlogo.png" alt="BN" class="nav-logo-img" style="width:28px;height:28px;max-width:28px;" />
-                <span>Barnabas Novak</span>
-            </a>
-            <div class="nav-links">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="resume.html" class="nav-link">Resume</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-            </div>
-            <div class="nav-right">
-                <a href="kezdolap.html" class="lang-btn">HU</a>
-                <button class="mobile-menu-btn" onclick="toggleMenu()">
-                    <i class="bi bi-list"></i>
-                </button>
-            </div>
+    <nav class="cyber-nav">
+        <a href="index.html" class="cyber-nav-logo">
+            <img src="assets/BNlogo.png" alt="BN" />
+        </a>
+        <div class="cyber-nav-links">
+            <a href="index.html" class="cyber-nav-link active">Home</a>
+            <a href="projects.html" class="cyber-nav-link">Projects</a>
+            <a href="resume.html" class="cyber-nav-link">Resume</a>
+        </div>
+<div class="cyber-nav-actions">
+            <a href="kezdolap.html" class="cyber-nav-lang">HU</a>
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html">Projects</a>
-    </div>
-
-    <!-- Hero Section -->
+    <!-- Hero -->
     <section class="hero">
         <div class="hero-bg"></div>
-        <div class="container hero-content">
+        <div class="hero-layout">
             <div class="hero-text">
-                <div class="hero-profile">
-                    <img src="assets/BarnabasNovak-professional_image.png" alt="Barnabas Novak" class="hero-avatar" />
+                <div class="hero-intro">Hi, I'm</div>
+                <h1 class="hero-name glitch-title">Barnabas Novak</h1>
+                <p class="hero-tagline">I build things that <span class="hero-rotate-word" id="rotateWord">scale</span></p>
+                <div class="hero-chips">
+                    <span class="chip chip-cyan">AI</span>
+                    <span class="chip chip-magenta">Full-Stack</span>
+                    <span class="chip chip-yellow">Startups</span>
                 </div>
-                <div class="hero-badge">Software Engineering · AI · Startups</div>
-                <h1 class="hero-title">Barnabas Novak</h1>
-                <p class="hero-subtitle">Software Engineer & Startup Founder</p>
-                <p class="hero-desc">B.S. Computer Science · Cal State LA '25</p>
-                <div class="hero-buttons">
-                    <a href="docs/2026Resume.pdf" class="btn-primary" target="_blank">
-                        Resume
+                <div class="hero-cta">
+                    <a href="projects.html" class="btn-glow primary">
+                        <span>View Projects</span>
                         <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="docs/2026Resume.pdf" class="btn-glow" target="_blank">
+                        <span>Resume</span>
+                        <i class="bi bi-file-earmark-text"></i>
                     </a>
                 </div>
                 <div class="hero-social">
-                    <a href="https://www.linkedin.com/in/barnabas-novak/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    <a href="https://github.com/BarnabasNovak1" target="_blank"><i class="bi bi-github"></i></a>
-                    <a href="https://www.instagram.com/b.novak11/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/barnabas-novak/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/BarnabasNovak1" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/b.novak11/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
                 </div>
             </div>
-            <div class="hero-3d">
-                <!-- 3D Animated Element -->
-                <div class="cube-wrapper">
-                    <div class="cube">
-                        <div class="cube-face front"><i class="bi bi-code-slash"></i></div>
-                        <div class="cube-face back"><i class="bi bi-cpu"></i></div>
-                        <div class="cube-face right"><i class="bi bi-braces"></i></div>
-                        <div class="cube-face left"><i class="bi bi-robot"></i></div>
-                        <div class="cube-face top"><i class="bi bi-lightning"></i></div>
-                        <div class="cube-face bottom"><i class="bi bi-gear"></i></div>
+            <div class="hero-hologram">
+                <div class="holo-glow"></div>
+                <div class="holo-rings">
+                    <div class="holo-ring"></div>
+                    <div class="holo-ring"></div>
+                    <div class="holo-ring"></div>
+                </div>
+                <div class="holo-particles">
+                    <span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="holo-laptop" data-open-cmdk role="button" tabindex="0" aria-label="Click to open terminal">
+                    <div class="holo-screen">
+                        <canvas id="codeRain"></canvas>
+                        <div class="holo-overlay">
+                            <i class="bi bi-terminal"></i>
+                            <span>click to enter</span>
+                        </div>
                     </div>
+                    <div class="holo-base"></div>
                 </div>
-                <!-- Floating particles -->
-                <div class="particles">
-                    <span class="particle p1"></span>
-                    <span class="particle p2"></span>
-                    <span class="particle p3"></span>
-                    <span class="particle p4"></span>
-                    <span class="particle p5"></span>
-                    <span class="particle p6"></span>
-                </div>
+                <div class="holo-reflection"></div>
             </div>
+        </div>
+        <div class="hero-scroll">
+            <span>scroll</span>
+            <i class="bi bi-chevron-double-down"></i>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
+    <!-- About Bento -->
+    <section class="bento-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>Founder of <a href="https://classmt.com" target="_blank">ClassMate AI</a>, an AI-driven educational platform empowering learners and early professionals. Co-founder of <a href="https://hacusa.org/hype-network/" target="_blank">HYPE Network</a> and <a href="https://headstarter.co/about" target="_blank">Headstarter Fellow</a>.</p>
-                <p>I'm the youngest Hungarian to complete the New York Marathon, bringing the same determination to every project. With experience spanning Hungary, New York, and Los Angeles, I combine cross-cultural perspective with technical expertise in AI, full-stack development, and startup building.</p>
+            <div class="bento-grid">
+                <div class="bento-card bento-intro">
+                    <h2>About Me</h2>
+                    <p>Software engineer and startup founder. I obsess over shipping products that solve real problems. Currently building AI tools for education.</p>
+                </div>
+                <div class="bento-card bento-building">
+                    <div class="bento-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                    <h3>Building</h3>
+                    <a href="https://classmt.com" target="_blank" class="bento-link">ClassMate AI</a>
+                    <p>AI-powered learning platform</p>
+                </div>
+                <div class="bento-card bento-edu">
+                    <div class="bento-icon"><i class="bi bi-mortarboard"></i></div>
+                    <h3>Education</h3>
+                    <p class="bento-highlight">Cal State LA '25</p>
+                    <p>B.S. Computer Science</p>
+                </div>
+                <div class="bento-card bento-marathon">
+                    <div class="bento-icon"><i class="bi bi-trophy"></i></div>
+                    <h3>Fun Fact</h3>
+                    <p>Youngest Hungarian to finish the <span class="bento-highlight">NYC Marathon</span></p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; 2025 Barnabas Novak. All rights reserved.</p>
+    <footer class="cyber-footer">
+        <div class="container">
+<p>&copy; 2026 Barnabas Novak</p>
             <div class="footer-links">
-                <a href="https://www.linkedin.com/in/barnabas-novak/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/BarnabasNovak1" target="_blank"><i class="bi bi-github"></i></a>
-                <a href="https://www.instagram.com/b.novak11/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/barnabas-novak/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/BarnabasNovak1" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/b.novak11/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
             </div>
         </div>
     </footer>
 
+    <!-- Command Palette -->
+    <div class="cmdk-overlay" aria-hidden="true">
+        <div class="cmdk" role="dialog" aria-modal="true" aria-label="Command Palette">
+            <div class="cmdk-header">
+                <i class="bi bi-terminal"></i>
+                <span>Command Palette</span>
+                <div class="cmdk-header-right">
+                    <span class="cmdk-kbd">esc</span>
+                </div>
+            </div>
+            <input class="cmdk-input" placeholder="Type a command or search..." />
+            <div class="cmdk-list">
+                <div class="cmdk-item" data-action="home" data-search="home index"><i class="bi bi-house"></i> Home <span class="cmdk-kbd">H</span></div>
+                <div class="cmdk-item" data-action="projects" data-search="projects work portfolio"><i class="bi bi-folder"></i> Projects <span class="cmdk-kbd">P</span></div>
+                <div class="cmdk-item" data-action="resume" data-search="resume open download cv"><i class="bi bi-file-text"></i> Resume <span class="cmdk-kbd">R</span></div>
+                <div class="cmdk-item" data-action="email" data-search="email contact hire"><i class="bi bi-envelope"></i> Email Me <span class="cmdk-kbd">E</span></div>
+                <div class="cmdk-item" data-action="copy-email" data-search="copy email address"><i class="bi bi-clipboard"></i> Copy Email <span class="cmdk-kbd">C</span></div>
+                <div class="cmdk-item" data-action="github" data-search="github code source"><i class="bi bi-github"></i> GitHub <span class="cmdk-kbd">G</span></div>
+                <div class="cmdk-item" data-action="linkedin" data-search="linkedin social connect"><i class="bi bi-linkedin"></i> LinkedIn <span class="cmdk-kbd">L</span></div>
+            </div>
+        </div>
+    </div>
+
     <script>
-        function toggleMenu() {
-            document.getElementById('mobileMenu').classList.toggle('open');
-        }
+        (function() {
+            const words = ['scale', 'matter', 'ship', 'last', 'inspire'];
+            let idx = 0;
+            const el = document.getElementById('rotateWord');
+            if (el) {
+                setInterval(() => {
+                    idx = (idx + 1) % words.length;
+                    el.style.opacity = 0;
+                    setTimeout(() => { el.textContent = words[idx]; el.style.opacity = 1; }, 300);
+                }, 2400);
+            }
+        })();
     </script>
+    <script src="js/arcade.js"></script>
 </body>
 </html>
