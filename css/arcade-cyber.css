@@ -9,7 +9,7 @@
   --border-soft: rgba(255, 255, 255, 0.06);
 }
 *,*::before,*::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   margin: 0;
   color: var(--text-primary) !important;
@@ -38,10 +38,16 @@ a:hover { color: #7fffd4; }
 .cyber-nav-logo img { width: 26px; height: 26px; border-radius: 6px; display: block; }
 .cyber-nav-links { display: flex; align-items: center; gap: 4px; margin: 0 8px; }
 .cyber-nav-link {
-  padding: 8px 16px; font-size: 15px; font-weight: 500;
+  padding: 8px 16px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 15px; font-weight: 500; line-height: 1.4;
+  white-space: nowrap; letter-spacing: normal;
   color: var(--text-secondary); border-radius: 8px;
   transition: color 0.2s, background 0.2s;
 }
+
+/* Hungarian labels are longer - tighter padding keeps the pill compact. */
+:lang(hu) .cyber-nav-link { padding: 8px 11px; font-size: 14px; }
 .cyber-nav-link:hover { color: var(--text-primary); background: rgba(255,255,255,0.05); }
 .cyber-nav-link.active { color: var(--text-primary); }
 .cyber-nav-actions { display: flex; align-items: center; gap: 6px; }
