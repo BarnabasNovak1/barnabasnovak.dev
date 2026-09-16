@@ -42,12 +42,13 @@ a:hover { color: #7fffd4; }
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-size: 15px; font-weight: 500; line-height: 1.4;
   white-space: nowrap; letter-spacing: normal;
+  font-synthesis: none;
   color: var(--text-secondary); border-radius: 8px;
   transition: color 0.2s, background 0.2s;
 }
 
 /* Hungarian labels are longer - tighter padding keeps the pill compact. */
-:lang(hu) .cyber-nav-link { padding: 8px 11px; font-size: 14px; }
+:lang(hu) .cyber-nav-link { padding: 8px 11px; font-size: 15px; }
 .cyber-nav-link:hover { color: var(--text-primary); background: rgba(255,255,255,0.05); }
 .cyber-nav-link.active { color: var(--text-primary); }
 .cyber-nav-actions { display: flex; align-items: center; gap: 6px; }
